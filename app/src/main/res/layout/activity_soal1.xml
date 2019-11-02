@@ -7,7 +7,6 @@
     tools:context=".Soal1Activity">
 
     <TextView
-        android:id="@+id/text_view_soal_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
@@ -18,38 +17,67 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:background="#EEEEEE"
         android:gravity="bottom"
-        >
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/button_jawaban_a_soal_1"
+        <TextView
+            android:id="@+id/text_view_soal_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:text="Ini soal yang mau ditanyakan" />
+
+        <TextView
+            android:padding="12dp"
+            android:background="@drawable/background_jawaban_belum_dipilih"
+            android:id="@+id/text_view_jawaban_a_soal_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="jawaban A"
-            />
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="jawaban A" />
 
-        <Button
-            android:id="@+id/button_jawaban_b_soal_1"
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:padding="12dp"
+            android:background="@drawable/background_jawaban_belum_dipilih"
+            android:id="@+id/text_view_jawaban_b_soal_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="jawaban B"
-            />
+            android:text="jawaban B" />
 
-        <Button
-            android:id="@+id/button_jawaban_c_soal_1"
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:padding="12dp"
+            android:background="@drawable/background_jawaban_belum_dipilih"
+            android:id="@+id/text_view_jawaban_c_soal_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="jawaban C"
-            />
+            android:text="jawaban C" />
 
-        <Button
-            android:id="@+id/button_jawaban_d_soal_1"
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:padding="12dp"
+            android:background="@drawable/background_jawaban_belum_dipilih"
+            android:id="@+id/text_view_jawaban_d_soal_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="jawaban D"
-            />
+            android:text="jawaban D" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_submit_jawaban_soal_1"
+            android:text="Submit"
+            android:layout_marginTop="16dp"/>
 
     </LinearLayout>
 
